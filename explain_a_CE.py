@@ -3,7 +3,7 @@ from retry import retry
 import json
 
 # Set the OpenAI API key
-client = OpenAI(api_key="YOUR_API_KEY")
+client = OpenAI(api_key="your_api_key")
 # Get an answer from the OpenAI-API
 @retry(tries=3, delay=2, max_delay=10)
 def GPT_repsonse_round(prompt, model, temperature, max_tokens):
@@ -53,7 +53,6 @@ You have already asked the user to give you a class expression. Here is the expr
 You have already explained this class expression to the user. Now answer the user questions according to the context.
 """
 
-dialogue_state = True
 
 for i in range(10):
     if i == 0:
