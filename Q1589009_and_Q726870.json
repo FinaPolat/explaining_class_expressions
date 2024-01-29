@@ -1,0 +1,17 @@
+{
+    "learned_expression": "privately held company (Q1589009) ⊓ brick and mortar (Q726870)",
+    "positive_examples": {
+        "Dickies (Q114913)": "company that manufactures and sells work-related clothing and other accessories",
+        "Globus (Q457503)": "German multinational hypermarket, home improvement and electronics retail chain"
+    },
+    "negative_examples": {
+        "Tommy Hilfiger (Q634881)": "American multinational corporation that designs and manufactures apparel",
+        "Tesco (Q487494)": "British multinational retailer",
+        "Foot Locker (Q63335)": "American Company sportswear and footwear retailer",
+        "Lacoste (Q309031)": "French clothing and footwear company"
+
+    },
+    "source": "https://en.wikipedia.org",
+    "extraction_model": "https://huggingface.co/ibm/knowgl-large",
+    "learned_by": "Neural Class Expression Learner"
+}

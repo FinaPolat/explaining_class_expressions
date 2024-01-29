@@ -1,0 +1,13 @@
+{
+    "learned_expression": "¬conglomerate (Q778575)",
+    "positive_examples": {
+        "BASF (Q9401)": "German chemical company with worldwide reach",
+        "Adidas (Q3895)": "German multinational corporation"
+    },
+    "negative_examples": {
+        "Bosch (Q234021)": "German manufacturing company"
+    },
+    "source": "https://en.wikipedia.org",
+    "extraction_model": "https://huggingface.co/ibm/knowgl-large",
+    "learned_by": "Neural Class Expression Learner"
+}

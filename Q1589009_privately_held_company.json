@@ -1,0 +1,16 @@
+{
+    "learned_expression": "privately held company (Q1589009)",
+    "positive_examples": {
+        "Tommy Hilfiger (Q634881)": "American multinational corporation that designs and manufactures apparel",
+        "Dickies (Q114913)": "company that manufactures and sells work-related clothing and other accessories",
+        "Globus (Q457503)": "German multinational hypermarket, home improvement and electronics retail chain"
+    },
+    "negative_examples": {
+        "Tesco (Q487494)": "British multinational retailer",
+        "BASF (Q9401)": "German chemical company with worldwide reach",
+        "Adidas (Q3895)": "German multinational corporation"
+    },
+    "source": "https://en.wikipedia.org",
+    "extraction_model": "https://huggingface.co/ibm/knowgl-large",
+    "learned_by": "Neural Class Expression Learner"
+}

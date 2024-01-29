@@ -1,0 +1,13 @@
+{
+    "learned_expression": "subsidiary (Q658255)",
+    "positive_examples": {
+        "Tommy Hilfiger (Q634881)": "American multinational corporation that designs and manufactures apparel"
+    },
+    "negative_examples": {
+        "Dickies (Q114913)": "company that manufactures and sells work-related clothing and other accessories",
+        "Globus (Q457503)": "German multinational hypermarket, home improvement and electronics retail chain"
+    },
+    "source": "https://en.wikipedia.org",
+    "extraction_model": "https://huggingface.co/ibm/knowgl-large",
+    "learned_by": "Neural Class Expression Learner"
+}
