@@ -1,7 +1,7 @@
 from openai import OpenAI
 from retry import retry
 import json
-import argparse
+import os
 
 
 system_persona_round1 = """You are ENEXA Explanantion Chatbot that can answer questions about class expressions learned by the ENEXA pipeline.
@@ -116,12 +116,13 @@ def dialog_design(api_key):
         
 
 def explain_a_CE():
-    
-    parser = argparse.ArgumentParser()
-    parser.add_argument("OpenAI_key", type=str, help="Your OpenAI API key")
-    args = parser.parse_args()
-    #print(args.OpenAI_key)
-    dialog_design(args.OpenAI_key)
+    OpenAI_key = os.environ.get('OPENAI_API_KEY')
+    if OpenAI_key == None or OpenAI_key == "":
+        OpenAI_key = input("I couldn't get the key from environment variables. Please enter your OpenAI key here: ").strip()
+    else:
+        print("OpenAI key found in environment variables.")
+        
+    dialog_design(OpenAI_key)
 
 if __name__ == "__main__":
     explain_a_CE()
