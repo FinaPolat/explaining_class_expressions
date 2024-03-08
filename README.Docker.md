@@ -1,22 +1,13 @@
-### Building and running your application
+### Pull the image from Docker Hub:
 
-When you're ready, start your application by running:
-`docker compose up --build`.
+`docker pull finapolat/enexa-ce-explainer:explainer`
 
-Your application will be available at http://localhost:8000.
+### Run the explainer with the following command:
 
-### Deploying your application to the cloud
+`docker run -p 8000:8000 -e OPENAI_API_KEY=$OPENAI_API_KEY -it finapolat/enexa-ce-explainer:explainer`
 
-First, build your image, e.g.: `docker build -t myapp .`.
-If your cloud uses a different CPU architecture than your development
-machine (e.g., you are on a Mac M1 and your cloud provider is amd64),
-you'll want to build the image for that platform, e.g.:
-`docker build --platform=linux/amd64 -t myapp .`.
+or for Windows:
 
-Then, push it to your registry, e.g. `docker push myregistry.com/myapp`.
+`docker run -p 8000:8000 -e OPENAI_API_KEY=%OPENAI_API_KEY% -it finapolat/enexa-ce-explainer:explainer`
 
-Consult Docker's [getting started](https://docs.docker.com/go/get-started-sharing/)
-docs for more detail on building and pushing.
-
-### References
-* [Docker's Python guide](https://docs.docker.com/language/python/)
+The explainer asks you to enter your API key if it fails to get it from environment variables. 
